@@ -34,6 +34,8 @@ mcp_server = MCPServer(
     name="IT Helpdesk MCP Server",
     version="1.0.0",
     instructions="Create IT support tickets and check the status of existing ones.",
+    # The SDK logs every MCP session at INFO; the app opens one per call, so keep only warnings.
+    log_level="WARNING",
 )
 
 # ---------------------------------------------------------------------------
